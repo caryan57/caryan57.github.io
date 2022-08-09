@@ -1,4 +1,11 @@
 .site__header_info {
-  height: 100px;
-  background-color: red;
+  height: 50px;
+}
+
+.site__header_info .logo__link {
+  height: inherit;
+}
+
+.site__header_info .logo__img {
+  height: inherit;
 }

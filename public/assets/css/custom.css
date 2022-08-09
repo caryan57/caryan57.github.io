@@ -5,3 +5,10 @@
 body {
   font-family: var(--cabin-font);
 }
+
+.app {
+  display: grid;
+  grid-template-areas: 'header' 'main' 'footer';
+  grid-template-columns: auto;
+  grid-template-rows: 100px 100vh auto;
+}

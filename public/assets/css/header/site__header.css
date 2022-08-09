@@ -1,1 +1,5 @@
 @import 'site__header_info.css';
+
+.site__header {
+  grid-area: header;
+}
