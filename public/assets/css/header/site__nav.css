@@ -1,0 +1,12 @@
+.nav__list {
+  display: flex;
+}
+
+.nav__list_item {
+  padding-right: 1rem;
+}
+
+.nav__list_link {
+  text-decoration: none;
+  color: black;
+}
