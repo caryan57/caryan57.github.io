@@ -3,6 +3,7 @@
 
 .site__header {
   grid-area: header;
+  background-color: var(--light-gray);
 }
 
 .site__header_container {

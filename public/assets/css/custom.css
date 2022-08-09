@@ -17,5 +17,5 @@ body {
   display: grid;
   grid-template-areas: 'header' 'main' 'footer';
   grid-template-columns: auto;
-  grid-template-rows: 100px 100vh auto;
+  grid-template-rows: auto 100vh auto;
 }

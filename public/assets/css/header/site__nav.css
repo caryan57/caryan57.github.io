@@ -4,9 +4,15 @@
 
 .nav__list_item {
   padding-right: 1rem;
+  font-size: 1.1rem;
+  font-weight: bold;
 }
 
 .nav__list_link {
   text-decoration: none;
-  color: black;
+  color: var(--main-blue);
+}
+
+.nav__list_link:hover {
+  color: var(--main-light-blue);
 }
