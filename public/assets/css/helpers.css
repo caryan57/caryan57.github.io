@@ -1,0 +1,5 @@
+.section-title {
+  color: var(--secondary-dark-gray);
+  font-size: 2.5rem;
+  font-weight: bold;
+}
