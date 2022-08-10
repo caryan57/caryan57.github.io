@@ -1,5 +1,6 @@
 @import './hero__profile.css';
 @import './hero__content.css';
+@import './hero__social.css';
 
 .site__hero {
   display: flex;
