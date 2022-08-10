@@ -1,0 +1,16 @@
+.hero__content {
+  width: 50%;
+}
+.hero__title {
+  font-size: 9rem;
+  font-weight: bold;
+  width: auto;
+  color: var(--main-blue);
+  margin-bottom: 1.5rem;
+}
+
+.hero__description {
+  font-size: 2rem;
+  width: 60%;
+  color: var(--dark-gray);
+}

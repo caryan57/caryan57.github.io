@@ -1,0 +1,9 @@
+@import './hero__profile.css';
+@import './hero__content.css';
+
+.site__hero {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: var(--light-gray);
+}

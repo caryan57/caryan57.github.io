@@ -1,0 +1,8 @@
+.hero__profile {
+  height: 800px;
+  width: auto;
+}
+
+.hero__profile_img {
+  height: inherit;
+}
