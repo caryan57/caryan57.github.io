@@ -6,11 +6,14 @@
   font-weight: bold;
   width: auto;
   color: var(--main-blue);
-  margin-bottom: 1.5rem;
+  margin-bottom: 4rem;
 }
 
 .hero__description {
   font-size: 2rem;
-  width: 60%;
+  text-align: center;
   color: var(--dark-gray);
+  margin-bottom: 2rem;
+  width: 70%;
+  margin: 0 auto;
 }
