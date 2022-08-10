@@ -23,4 +23,9 @@
 .hero__social_icon {
   font-size: 2rem;
   padding-bottom: 5px;
+  transition: all 0.5s ease-in-out;
+}
+
+.hero__social_icon:hover {
+  transform: scale(1.2);
 }

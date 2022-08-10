@@ -9,6 +9,12 @@
   margin-bottom: 4rem;
 }
 
+.hero__title:hover {
+  animation: flash;
+  animation-duration: 1s;
+  cursor: pointer;
+}
+
 .hero__description {
   font-size: 2rem;
   text-align: center;
