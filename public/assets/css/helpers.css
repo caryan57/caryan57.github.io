@@ -13,6 +13,12 @@
 /* ICONS */
 .icon {
   font-size: 3em;
+  transition: all 0.5s ease-in-out;
+  transform: rotate(0deg);
+}
+
+.icon:hover {
+  transform: rotate(25deg);
 }
 
 .icons__list {
@@ -31,6 +37,14 @@
   border-radius: 50%;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 10px -3px 20px -4px rgba(0, 0, 0, 0.36);
+}
+
+.icons__box:hover {
+  color: var(--main-blue);
+  background-color: white;
 }
 
 .icon__tag {
