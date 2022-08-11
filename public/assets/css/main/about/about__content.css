@@ -9,3 +9,12 @@
   margin-bottom: 1.5rem;
   font-family: var(--roboto-font);
 }
+
+.about__sign {
+  margin-top: 3rem;
+  width: 300px;
+}
+
+.about__sign img {
+  width: inherit;
+}
