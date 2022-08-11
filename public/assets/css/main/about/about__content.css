@@ -1,0 +1,11 @@
+.about__description {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  word-spacing: 0.1em;
+  width: 53%;
+}
+
+.about__description p {
+  margin-bottom: 1.5rem;
+  font-family: var(--roboto-font);
+}
