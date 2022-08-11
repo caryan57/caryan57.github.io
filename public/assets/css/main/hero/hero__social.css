@@ -1,7 +1,8 @@
 .hero__social {
   display: flex;
   justify-content: space-evenly;
-  margin-top: 5rem;
+  margin-top: 3rem;
+  width: 100%;
 }
 
 .hero__social_item {

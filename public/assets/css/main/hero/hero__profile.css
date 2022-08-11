@@ -1,8 +1,11 @@
 .hero__profile {
-  height: 800px;
-  width: auto;
+  width: 45%;
+  padding: 2em 0;
 }
 
 .hero__profile_img {
   height: inherit;
+  border-radius: 50%;
+  width: 90%;
+  box-shadow: 9px 10px 23px -4px rgba(0, 0, 0, 0.37);
 }

@@ -1,12 +1,16 @@
 .hero__content {
-  width: 50%;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .hero__title {
-  font-size: 9rem;
+  font-size: 10.5rem;
   font-weight: bold;
   width: auto;
   color: var(--main-blue);
   margin-bottom: 4rem;
+  text-align: center;
 }
 
 .hero__title:hover {
@@ -20,6 +24,5 @@
   text-align: center;
   color: var(--dark-gray);
   margin-bottom: 2rem;
-  width: 70%;
-  margin: 0 auto;
+  width: 80%;
 }
