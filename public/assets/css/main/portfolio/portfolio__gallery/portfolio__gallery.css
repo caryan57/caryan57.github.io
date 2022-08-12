@@ -2,11 +2,14 @@
 
 .portfolio__gallery {
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: auto;
   gap: 1.5em;
-  height: 1900px;
-  background-color: gray;
   max-width: 100%;
   padding: 2em;
+  grid-template-areas:
+    'p1 p1 p2 p2'
+    'p1 p1 p2 p2'
+    'p3 p3 p4 p4'
+    'p3 p3 p4 p4';
 }
