@@ -1,0 +1,35 @@
+.portfolio__title {
+  text-align: center;
+}
+
+.portfolio__menu {
+  display: flex;
+  justify-content: center;
+  font-size: 1.2em;
+}
+
+.portfolio__menu_item {
+  margin-right: 2rem;
+}
+
+.portfolio__menu_link {
+  text-decoration: none;
+  color: var(--dark-gray);
+  transition: color 0.2s ease-in;
+  padding-bottom: 5px;
+}
+
+.portfolio__menu_link.active {
+  border-bottom: 3px solid;
+  padding-bottom: 5px;
+}
+
+.portfolio__menu_link:hover {
+  color: var(--main-light-brown);
+  border-bottom: 2px solid;
+}
+
+.portfolio__menu_link.active:hover {
+  color: var(--dark-gray);
+  border-bottom: 3px solid;
+}

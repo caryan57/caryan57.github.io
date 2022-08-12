@@ -1,0 +1,12 @@
+@import './portfolio__featured.css';
+
+.portfolio__gallery {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 1.5em;
+  height: 1900px;
+  background-color: gray;
+  max-width: 100%;
+  padding: 2em;
+}
