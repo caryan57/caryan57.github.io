@@ -10,6 +10,10 @@
   font-weight: bold;
 }
 
+.brown {
+  color: var(--main-brown);
+}
+
 /* ICONS */
 .icon {
   font-size: 3em;
@@ -21,9 +25,16 @@
   transform: rotate(25deg);
 }
 
+.icons__container {
+  width: 90%;
+  margin: 0 auto;
+}
+
 .icons__list {
   display: flex;
   justify-content: space-around;
+  gap: 3rem;
+  flex-wrap: wrap;
 }
 
 .icons__box {
@@ -42,9 +53,17 @@
   box-shadow: 10px -3px 20px -4px rgba(0, 0, 0, 0.36);
 }
 
+.icons__box.brown {
+  background-color: var(--main-brown);
+}
+
+.icons__box.brown:hover {
+  color: var(--main-brown);
+}
+
 .icons__box:hover {
   color: var(--main-blue);
-  background-color: white;
+  background-color: var(--light-gray);
 }
 
 .icon__tag {
@@ -52,5 +71,4 @@
   text-align: center;
   font-weight: bold;
   margin-top: 0.5em;
-  max-width: 50%;
 }
