@@ -1,0 +1,6 @@
+@import './education__content.css';
+
+.site__education {
+  padding: 10rem 4rem;
+  background-color: var(--light-gray);
+}
