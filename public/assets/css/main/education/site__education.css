@@ -3,4 +3,5 @@
 .site__education {
   padding: 10rem 4rem;
   background-color: var(--light-gray);
+  margin-bottom: 12rem;
 }
