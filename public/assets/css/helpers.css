@@ -14,6 +14,10 @@
   color: var(--main-brown);
 }
 
+.active {
+  font-weight: bold;
+}
+
 /* ICONS */
 .icon {
   font-size: 3em;
