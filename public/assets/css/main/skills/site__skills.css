@@ -1,6 +1,6 @@
 @import './skills__content.css';
 
 .site__skills {
-  margin-bottom: 10rem;
-  padding: 0 2.5rem;
+  padding: 10rem 4rem;
+  background: var(--light-gray);
 }
