@@ -1,0 +1,6 @@
+@import './contact__content.css';
+
+.site__contact {
+  padding: 10rem 4rem;
+  background-color: var(--light-gray);
+}

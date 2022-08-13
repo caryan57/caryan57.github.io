@@ -1,5 +1,3 @@
-@import './hero/site__hero.css';
-
 .site__main {
   grid-area: main;
 }
