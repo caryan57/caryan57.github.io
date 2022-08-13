@@ -1,6 +1,5 @@
 @import './about__content.css';
 
 .site__about {
-  padding: 0 10rem;
-  margin-bottom: 10rem;
+  padding: 10rem 4rem;
 }

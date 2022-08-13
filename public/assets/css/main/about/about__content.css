@@ -1,8 +1,12 @@
+.about__content {
+  width: 100%;
+}
+
 .about__description {
   font-size: 1.2rem;
   line-height: 1.8rem;
   word-spacing: 0.1em;
-  width: 53%;
+  width: 900px;
 }
 
 .about__description p {
@@ -12,7 +16,7 @@
 
 .about__sign {
   margin-top: 3rem;
-  width: 300px;
+  width: 250px;
 }
 
 .about__sign img {
