@@ -10,9 +10,9 @@
 
 .nav__list_link {
   text-decoration: none;
-  color: var(--main-blue);
+  color: var(--secondary-dark-gray);
 }
 
 .nav__list_link:hover {
-  color: var(--main-light-blue);
+  color: var(--main-blue);
 }
