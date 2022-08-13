@@ -1,11 +1,13 @@
 .hero__profile {
-  width: 45%;
-  padding: 2em 0;
+  width: auto;
+  padding: 2em;
+  display: flex;
+  justify-content: center;
 }
 
 .hero__profile_img {
   height: inherit;
   border-radius: 50%;
-  width: 90%;
+  width: 600px;
   box-shadow: 9px 10px 23px -4px rgba(0, 0, 0, 0.37);
 }
