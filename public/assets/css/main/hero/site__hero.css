@@ -9,3 +9,9 @@
   background-color: var(--light-gray);
   padding: 10rem 0;
 }
+
+@media (max-width: 768px) {
+  .site__hero {
+    flex-direction: column;
+  }
+}

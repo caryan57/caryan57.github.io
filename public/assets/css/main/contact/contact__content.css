@@ -60,3 +60,9 @@
 .contact__submit:hover {
   background-color: var(--main-dark-blue);
 }
+
+@media (max-width: 768px) {
+  .contact__form_container {
+    width: 100%;
+  }
+}

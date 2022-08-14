@@ -22,3 +22,9 @@
 .about__sign img {
   width: inherit;
 }
+
+@media (max-width: 768px) {
+  .about__description {
+    width: auto;
+  }
+}
