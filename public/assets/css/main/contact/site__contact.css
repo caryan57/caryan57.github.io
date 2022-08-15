@@ -4,3 +4,9 @@
   padding: 10rem 4rem;
   background-color: var(--light-gray);
 }
+
+@media (max-width: 495px) {
+  .site__contact {
+    padding: 5rem 2rem;
+  }
+}

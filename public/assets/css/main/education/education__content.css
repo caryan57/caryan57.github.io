@@ -70,3 +70,9 @@
     width: 100%;
   }
 }
+
+@media (max-width: 495px) {
+  .school__logo {
+    width: 100%;
+  }
+}

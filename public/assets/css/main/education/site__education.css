@@ -5,3 +5,9 @@
   background-color: var(--light-gray);
   margin-bottom: 12rem;
 }
+
+@media (max-width: 495px) {
+  .site__education {
+    padding: 5rem 2rem;
+  }
+}

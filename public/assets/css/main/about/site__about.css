@@ -3,3 +3,9 @@
 .site__about {
   padding: 10rem 4rem;
 }
+
+@media (max-width: 495px) {
+  .site__about {
+    padding: 5rem 2rem;
+  }
+}

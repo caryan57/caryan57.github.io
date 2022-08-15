@@ -28,3 +28,9 @@
     width: auto;
   }
 }
+
+@media (max-width: 495px) {
+  .about__sign {
+    width: 100%;
+  }
+}
