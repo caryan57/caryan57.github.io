@@ -30,3 +30,13 @@
 .hero__social_icon:hover {
   transform: scale(1.2);
 }
+
+@media (max-width: 649px) {
+  .hero__social {
+    flex-direction: column;
+  }
+
+  .hero__social_item {
+    margin-bottom: 3em;
+  }
+}

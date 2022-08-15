@@ -64,3 +64,9 @@
   max-height: 300px;
   max-width: 300px;
 }
+
+@media (max-width: 649px) {
+  .education__list_item {
+    width: 100%;
+  }
+}

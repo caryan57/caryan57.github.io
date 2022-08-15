@@ -76,3 +76,9 @@
   font-weight: bold;
   margin-top: 0.5em;
 }
+
+@media (max-width: 495px) {
+  .section-title {
+    font-size: 3.5rem;
+  }
+}
