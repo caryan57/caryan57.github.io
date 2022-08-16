@@ -544,7 +544,11 @@
           <div class="contact__content">
             <h3 class="contact__title section-title">¡Envíame un mensaje!</h3>
             <div class="contact__form_container">
-              <form action="" class="contact__form">
+              <form
+                action="https://formspree.io/f/mpznzynz"
+                method="post"
+                class="contact__form"
+              >
                 <div class="contact__form_top">
                   <div class="form__input">
                     <label for="name" class="contact__label">Nombre</label>
@@ -553,10 +557,13 @@
                       class="contact__input"
                       name="name"
                       id="name"
-                      data-input="name"
+                      data-type="name"
                       placeholder="Nombre"
                       required
                     />
+                    <span class="contact__input_error"
+                      >Este campo no es valido</span
+                    >
                   </div>
                   <div class="form__input">
                     <label for="email" class="contact__label">Email</label>
@@ -565,10 +572,13 @@
                       class="contact__input"
                       name="email"
                       id="email"
-                      data-input="email"
+                      data-type="email"
                       placeholder="Email"
                       required
                     />
+                    <span class="contact__input_error"
+                      >Este campo no es valido</span
+                    >
                   </div>
                   <div class="form__input">
                     <label for="subject" class="contact__label">Asunto</label>
@@ -577,10 +587,13 @@
                       class="contact__input"
                       name="subject"
                       id="subject"
-                      data-input="subject"
+                      data-type="subject"
                       placeholder="Asunto"
                       required
                     />
+                    <span class="contact__input_error"
+                      >Este campo no es valido</span
+                    >
                   </div>
                 </div>
                 <div class="form__input">
@@ -589,18 +602,29 @@
                     name="message"
                     class="contact__input text-message"
                     id="message"
-                    data-input="message"
+                    data-type="message"
                     rows="10"
                     cols="50"
                     placeholder="Su Mensaje"
                     required
                   ></textarea>
+                  <span class="contact__input_error"
+                    >Este campo no es valido</span
+                  >
+                </div>
+                <div class="form__input">
+                  <div id="recapID" class="g-recaptcha"></div>
                 </div>
                 <div class="contact__form_bottom">
-                  <button class="contact__submit" type="submit">
-                    Enviar Mensaje
-                  </button>
+                  <input
+                    id="submit"
+                    class="contact__submit"
+                    type="submit"
+                    value="Enviar Mensaje"
+                    disabled
+                  />
                 </div>
+                <span class="contact__status"></span>
               </form>
             </div>
           </div>
@@ -610,6 +634,63 @@
         <p class="footer__copy">Desarrollado por Carlos Olivares© | 2022</p>
       </footer>
     </div>
+    <script type="module" src="./assets/js/app.js"></script>
     <script src="./assets/js/animations.js"></script>
+    <script src="./assets/js/form/form.js"></script>
+    <script
+      src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+      async
+      defer
+    ></script>
+    <script>
+      window.onload = function () {
+        var el = document.getElementById('recapID');
+        if (el) {
+          el.setAttribute('required', 'required');
+        }
+      };
+      function onloadCallback() {
+        grecaptcha.render('recapID', {
+          sitekey: '6LfCynshAAAAALBoNNemh3NnEKqj4y8Esq5w28bp',
+          callback: successCallback,
+        });
+      }
+
+      var form = document.getElementById('contact__form');
+
+      async function handleSubmit(event) {
+        event.preventDefault();
+        var status = document.getElementById('contact__status');
+        var data = new FormData(event.target);
+        fetch(event.target.action, {
+          method: form.method,
+          body: data,
+          headers: {
+            Accept: 'application/json',
+          },
+        })
+          .then(response => {
+            if (response.ok) {
+              status.innerHTML = 'Thanks for your submission!';
+              form.reset();
+            } else {
+              response.json().then(data => {
+                if (Object.hasOwn(data, 'errors')) {
+                  status.innerHTML = data['errors']
+                    .map(error => error['message'])
+                    .join(', ');
+                } else {
+                  status.innerHTML =
+                    'Oops! There was a problem submitting your form';
+                }
+              });
+            }
+          })
+          .catch(error => {
+            status.innerHTML = 'Oops! There was a problem submitting your form';
+          });
+      }
+      form.addEventListener('submit', handleSubmit);
+    </script>
   </body>
 </html>
