@@ -36,6 +36,10 @@
   grid-area: p4;
 }
 
+.portfolio__box:nth-child(5) {
+  grid-area: p5;
+}
+
 .portfolio_1 {
   background-image: url('../../../../img/portfolio_1.jpg');
 }
@@ -50,6 +54,10 @@
 
 .portfolio_4 {
   background-image: url('../../../../img/portfolio_4.jpg');
+}
+
+.portfolio_5 {
+  background-image: url('../../../../img/portfolio_5.jpg');
 }
 
 .portfolio__box a:hover {
